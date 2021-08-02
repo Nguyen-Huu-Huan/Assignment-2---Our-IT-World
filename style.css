@@ -17,9 +17,15 @@ section{
 }
 h1{
   color: #4568f5;
+  font-size: 3rem;
 }
 hr{
   background: #4568f5;
+  width: 60%;
+  height: 3px;
+  border: 1px double black;
+  border-radius: 10px 10px 10px 10px;
+
 }
 a{
   text-decoration: none;
@@ -222,6 +228,9 @@ a>h5{
 }
 .register{
   color: white;
+}
+.main-content{
+  margin-left: 2vw;
 }
 .btn{
   border-radius: 10px;
