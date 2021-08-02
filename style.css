@@ -114,6 +114,9 @@ td[colspan="5"]{
 .col-50{
   flex-basis: 50%;
 }
+.col-55{
+  flex-basis: 55%;
+}
 .col-60{
   flex-basis: 60%;
 }
