@@ -274,25 +274,6 @@ a>h5{
   width: 100%;
   height: 100%;
 }
-input[type="text"],input[type="password"], input[type="number"], input[type="email"] {
-  height: 2rem;
-  font-size: 20px;
-  caret-color: blue;
-  padding-left: 1rem;
-  border-width: 0.12rem;
-  border-top-style: hidden;
-  border-left-style: hidden;
-  border-right-style: hidden;
-  margin-bottom: 0.3rem;
-}
-input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="email"]:focus {
-  border-width: 0.18rem;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  outline: none;
-  border-color: blue;
-}
 .body{
   margin-top:10vh;
 }
@@ -319,6 +300,13 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:foc
 .aboutus-menu .container:hover{
   transform: scale(1.1);
 }
+.cryptocurrency{
+  background-image: url('cryptocurrency.jpg');
+  background-attachment: fixed;
+  height: 400px;
+
+}
+
 .underline{
   visibility: hidden;
   width: 40px;
