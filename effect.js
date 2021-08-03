@@ -21,6 +21,7 @@ function no_underline(target) {
 }
 var all_content = document.querySelectorAll('.aboutus-content>div');
 var all_focus = document.querySelectorAll('.focus');
+
 function active(target) {
   all_content.forEach((item, i) => {
     var content_children = "#"+item.id+">h2";
@@ -30,10 +31,13 @@ function active(target) {
     var focus_children = "."+item.class;
     item.style.visibility = "hidden";
   });
-
-  var target_reformat = '#'+target+">h2";
+  var target_id_reformat = '#'+target+">h2";
+  var highlight_element = document.querySelector(target_id_reformat);
+  var target_class_reformat = '.'+target;
+  document.querySelector(target_class_reformat).addEventListener("click", function(){
+    window.location.href = '#'+target;
+  });
   var target_focus = '.focus-icon-'+target;
-  var highlight_element = document.querySelector(target_reformat);
   var focus = document.querySelector(target_focus);
   highlight_element.style.color = "red";
   highlight_element.style.transition = "0.5s ease-in-out";
