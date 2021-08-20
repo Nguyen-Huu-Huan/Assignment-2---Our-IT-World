@@ -54,7 +54,18 @@ table{
 tr td{
   border-bottom: 3px solid #009ffd;
 }
-
+code{
+  padding: 3px;
+  margin: 0 3px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  color: black;
+  background: white;
+  transition: ease-in 0.2s;
+}
+code:hover{
+  text-decoration: underline;
+  color: red;
+}
 td[colspan="5"]{
     background: #009ffd;
     color: white;
