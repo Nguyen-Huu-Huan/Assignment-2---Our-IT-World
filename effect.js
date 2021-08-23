@@ -43,3 +43,23 @@ function active(target) {
   highlight_element.style.transition = "0.5s ease-in-out";
   focus.style.visibility = "visible";
 }
+function hover_content(des_code) {
+  original = '.back-'+des_code;
+  document.querySelector(original).innerHTML = "[Head back]: &emsp;";
+  document.querySelector(original).style.cursor = "pointer";
+  document.querySelector(original).style.color = "black";
+  document.querySelector(original).onclick = function () {
+    destination = '.'+des_code+'-original';
+    document.querySelector(destination).scrollIntoView();
+  }
+}
+function unhover_content(des_code, old_content) {
+  original = '.back-'+des_code;
+  old_content+=":&emsp;";
+  document.querySelector(original).innerHTML = old_content;
+  document.querySelector(original).style.color = "red";
+  document.querySelector(original).onclick = function () {
+    destination = '.'+des_code+'-original';
+    document.querySelector(destination).scrollIntoView();
+  }
+}
